@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Eyx4
-- 👀 I’m interested in mp 3 or 4 files.
+- 👀 I’m interested in all files.
 - 🌱 I’m currently learning N/A
 - 💞️ I’m looking to collaborate on N/A
 - 📫 How to reach me
