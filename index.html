@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Information</title>
+  <script>
+    async function getIpInfo() {
+      try {
+        const response = await fetch('https://ipinfo.io/json');
+        const data = await response.json();
+
+        // Display IP information on the page
+        document.getElementById('ip').textContent = `IP: ${data.ip}`;
+        document.getElementById('city').textContent = `City: ${data.city}`;
+        document.getElementById('region').textContent = `Region: ${data.region}`;
+        document.getElementById('country').textContent = `Country: ${data.country}`;
+      } catch (error) {
+        console.error('Error fetching IP information:', error);
+      }
+    }
+
+    // Call the function when the page loads
+    window.onload = getIpInfo;
+  </script>
+</head>
+<body>
+  <h1>IP Information</h1>
+  <p id="ip">IP: Loading...</p>
+  <p id="city">City: Loading...</p>
+  <p id="region">Region: Loading...</p>
+  <p id="country">Country: Loading...</p>
+</body>
+</html>
